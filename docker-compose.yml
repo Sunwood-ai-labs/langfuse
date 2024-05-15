@@ -16,7 +16,7 @@ services:
       - LANGFUSE_ENABLE_EXPERIMENTAL_FEATURES=${LANGFUSE_ENABLE_EXPERIMENTAL_FEATURES:-false}
 
   db:
-    image: postgres
+    image: postgres:16.1
     restart: always
     environment:
       - POSTGRES_USER=postgres
